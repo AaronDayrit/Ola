@@ -1,0 +1,67 @@
+@import "base.css";
+
+body{
+    background-color: black;
+}
+
+main .container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    z-index: 2;
+}
+
+video{
+    width: 100%;
+    height: vh;
+    position: absolute;
+    opacity: 0.12;
+}
+
+img{
+    width: 700px;
+
+    opacity: 0;
+    -webkit-animation: fade-in 0.7s forwards;
+    -moz-animation: push-in 0.7s forwards;
+    animation: push-in 0.55s forwards ease;
+    
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    margin-top: 50px;
+}
+
+
+p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-top: 0px;
+    opacity: 0;
+
+    -webkit-animation: fade-in 0.7s forwards;
+    -moz-animation: push-in 0.7s forwards;
+    animation: push-in 0.55s forwards ease;
+    
+    -webkit-animation-delay: 0.65s;
+    -moz-animation-delay: 0.65s;
+    animation-delay: 0.65s;
+}
+
+  
+  @keyframes push-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+  }
